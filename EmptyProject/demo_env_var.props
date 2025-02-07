@@ -3,12 +3,13 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <ENV_KEY>hello</ENV_KEY>
+    <ENV_KEY2>$(ENV_KEY)_world</ENV_KEY2>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
   <ItemGroup>
     <BuildMacro Include="ENV_KEY">
-      <Value>$(ENV_KEY)</Value>
+      <Value>$(ENV_KEY2)!!!</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>
